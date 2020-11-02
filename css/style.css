@@ -1,0 +1,154 @@
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 25px;
+}
+
+header .logo img {
+  width: 141px;
+}
+
+header .menu {
+  color: white;
+}
+
+header .menu ul .menu-item {
+  padding: 0px 20px 20px 20px;
+  position: relative;
+}
+
+header .menu ul .menu-item .a {
+  color: #fff;
+  position: relative;
+}
+
+header .menu ul .menu-item .a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  margin-top: 10px;
+  background-color: white;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+header .menu ul .menu-item .a:hover::after {
+  width: 100%;
+}
+
+header .menu ul .menu-item:hover .tab {
+  opacity: 1;
+  visibility: visible;
+  padding: 15px;
+  overflow: visible;
+}
+
+header .menu ul .menu-item .tab {
+  position: absolute;
+  left: -20px;
+  top: 40px;
+  width: 250px;
+  padding: 0px 15px;
+  background-color: #1d1d1d;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: padding 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out;
+}
+
+header .menu ul .menu-item .tab li {
+  position: relative;
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+header .menu ul .menu-item .tab li a {
+  color: #c3c3c3;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header .menu ul .menu-item .tab li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #c3c3c3;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+header .menu ul .menu-item .tab li:hover > a {
+  margin-left: 20px;
+  color: #fff;
+}
+
+header .menu ul .menu-item .tab li:hover::after {
+  width: 10px;
+}
+
+header .menu ul .menu-item .tab .menu-item2 {
+  position: relative;
+}
+
+header .menu ul .menu-item .tab .menu-item2 .tab2 {
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  top: -5px;
+  left: 105%;
+}
+
+header .menu ul .menu-item .tab .menu-item2:hover .tab2 {
+  opacity: 1;
+}
+
+header .menu ul i {
+  padding: 0 10px;
+}
+
+#section-1 {
+  height: 100vh;
+  position: relative;
+}
+
+#section-1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#section-1 .next,
+#section-1 .prev {
+  position: absolute;
+  top: 50%;
+}
+
+#section-1 .next i,
+#section-1 .prev i {
+  font-size: 60px;
+  color: #fff;
+}
+
+#section-1 .next {
+  right: 2%;
+}
+
+#section-1 .prev {
+  left: 2%;
+}
+/*# sourceMappingURL=style.css.map */
